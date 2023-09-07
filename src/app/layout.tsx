@@ -18,7 +18,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} dark:bg-slate-800 mb-12 md:mb-24`}>
+      <body className={`${inter.className} dark:bg-slate-800 mb-12 md:mb-24 scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90`}>
         <Navbar />
         <MyProfilePic />
         {children}
