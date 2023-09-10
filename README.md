@@ -37,3 +37,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [ ] Add a `search` input to filter the list of posts
 - [ ] Add a `sort` input to sort the list of posts
+- [ ] Add a Dark mode switcher
+
+## Updates
+### `0.1.0` _(03-09-2023)_
+- Static Site Generation / SSG 
+- Markdown files for performance and content.
+
+### `0.1.1` _(10-09-2023)_
+- Remote MDX Content Files
+- `revalidatePath` endpoint `/api/revalidate?secret={{ GITHUB_TOKEN }}&path={{'/'}}` allows for revalidation of blog posts on demand.

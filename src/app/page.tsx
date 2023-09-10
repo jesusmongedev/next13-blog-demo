@@ -1,9 +1,13 @@
+import MyProfilePic from '@/components/MyProfilePic'
 import Posts from '@/components/Posts'
+
+export const revalidate = process.env.REVALIDATE
 
 export default function Home () {
   return (
-    <main className='px-6 max-w-2xl mx-auto dark:text-white'>
-      <p className='mt-12 mb-12 text-3xl text-center dark:text-white'>
+    <div>
+      <MyProfilePic />
+      <p className='mt-12 mb-12 text-3xl text-center'>
         Hi and Welcome 👋, I'm <span className='font-bold'>Jesus</span>
       </p>
       <p>
@@ -23,10 +27,14 @@ export default function Home () {
         <a className='link' href='https://nextjs.org/learn' target='_blank'>
           {' '}
           Next.js tutorial
+        </a> and{' '} Dave's{' '}
+        <a className='link' href='https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj' target='_blank'>
+          {' '}
+          Next.js Tutorials for Beginners
         </a>
         .)
       </p>
       <Posts />
-    </main>
+    </div>
   )
 }
