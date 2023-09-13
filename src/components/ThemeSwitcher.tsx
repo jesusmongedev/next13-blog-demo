@@ -17,7 +17,7 @@ export default function ThemeSwitcher () {
 
   const currentTheme = theme === 'dark' ? 'light' : 'dark'
 
-  const icon = currentTheme === 'dark' ? <SunIcon className='h-5 w-5 text-orange-300' /> : <MoonIcon className='h-5 w-5 text-orange-300' />
+  const icon = currentTheme === 'dark' ? <SunIcon className='h-5 sm:h-7 text-orange-300' /> : <MoonIcon className='h-5 sm:h-7 text-orange-300' />
 
   const toggleTheme = () => {
     setTheme(currentTheme)

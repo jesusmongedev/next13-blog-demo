@@ -15,14 +15,14 @@ function Navbar () {
             Jesús Monge
           </Link>
         </h1>
-        <div className='flex flex-row justify-center items-center sm:justify-evenly align-middle gap-4 text-2xl lg:text-3xl'>
+        <div className='flex flex-row justify-center items-center sm:justify-evenly align-middle gap-4'>
           <Link
             className='nav-link'
             href='https://jesusmongedev.github.io/jmongedev/#skillse'
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
-            <FolderIcon className='h-5 w-5' />
+            <FolderIcon className='h-5 sm:h-6' />
           </Link>
           <Link
             className='nav-link'
@@ -30,7 +30,7 @@ function Navbar () {
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
-            <ComputerDesktopIcon className='h-5 w-5' />
+            <ComputerDesktopIcon className='h-5 sm:h-6' />
           </Link>
           <Link
             className='nav-link'
@@ -38,7 +38,7 @@ function Navbar () {
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
-            <CodeBracketIcon className='h-5 w-5' />
+            <CodeBracketIcon className='h-5 sm:h-6' />
           </Link>
           <Link
             className='nav-link'
@@ -46,10 +46,10 @@ function Navbar () {
             target='_blank'
             rel='noopener noreferrer nofollow'
           >
-            <XMarkIcon className='h-5 w-5' />
+            <XMarkIcon className='h-5 sm:h-6' />
           </Link>
+          <ThemeSwitcher />
         </div>
-        <ThemeSwitcher />
       </div>
     </nav>
   )
