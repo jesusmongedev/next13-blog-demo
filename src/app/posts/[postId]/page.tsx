@@ -2,7 +2,7 @@ import getFormattedDate from '@/lib/getFormattedDate'
 import { getPostByName, getPostsMeta } from '@/lib/posts'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import 'highlight.js/styles/github-dark.css'
+import 'highlight.js/styles/a11y-dark.css'
 
 export const revalidate = process.env.REVALIDATE
 

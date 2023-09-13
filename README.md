@@ -35,9 +35,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Improvements
 
+- [X] Add a Dark mode switcher
 - [ ] Add a `search` input to filter the list of posts
 - [ ] Add a `sort` input to sort the list of posts
-- [ ] Add a Dark mode switcher
 
 ## Updates
 ### `0.1.0` _(03-09-2023)_
@@ -47,3 +47,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### `0.1.1` _(10-09-2023)_
 - Remote MDX Content Files
 - `revalidatePath` endpoint `/api/revalidate?secret={{ GITHUB_TOKEN }}&path={{'/'}}` allows for revalidation of blog posts on demand.
+### `0.1.2` _(12-09-2023)_
+- Add a Dark mode switcher using talwindcss darkMode class and next-themes package.
+- Replace react-icons with heroicons.
