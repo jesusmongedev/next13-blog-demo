@@ -1,4 +1,5 @@
 import getFormattedDate from '@/lib/getFormattedDate'
+import { Meta } from '@/types'
 import Link from 'next/link'
 
 type Props = {

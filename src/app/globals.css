@@ -4,9 +4,9 @@
 
 @layer components{
   .link {
-    @apply text-blue-500 hover:underline hover:text-blue-600 transition-all duration-300;
+    @apply hover:text-primary dark:text-white/90 dark:hover:text-primary transition-all duration-75;
   }
   .nav-link {
-    @apply dark:text-white/90 no-underline dark:hover:text-white text-slate-800 hover:text-gray-900 transition-all duration-300;
+    @apply no-underline;
   }
 }

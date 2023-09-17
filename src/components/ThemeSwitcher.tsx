@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes'
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
+import { IconSun, IconMoon } from '@tabler/icons-react'
 import { useEffect, useState } from 'react'
 
 export default function ThemeSwitcher () {
@@ -17,13 +17,15 @@ export default function ThemeSwitcher () {
 
   const currentTheme = theme === 'dark' ? 'light' : 'dark'
 
-  const icon = currentTheme === 'dark' ? <SunIcon className='h-5 sm:h-7 text-orange-300' /> : <MoonIcon className='h-5 sm:h-7 text-orange-300' />
+  const icon = currentTheme === 'dark' ? <IconSun className='h-5 sm:h-7 text-orange-300' /> : <IconMoon className='h-5 sm:h-7 text-orange-300' />
 
   const toggleTheme = () => {
     setTheme(currentTheme)
   }
 
   return (
-    <button onClick={toggleTheme}>{icon}</button>
+    <div className='flex'>
+      <button onClick={toggleTheme}>{icon}</button>
+    </div>
   )
 }

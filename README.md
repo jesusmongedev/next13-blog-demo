@@ -33,9 +33,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Improvements
+## TODO
 
 - [X] Add a Dark mode switcher
+- [X] Add a `404` page
+- [] Add NextUI library
+- [] Add `about` section 
+- [] Add a `projects` section
+- [] Add a `blog` section
 - [ ] Add a `search` input to filter the list of posts
 - [ ] Add a `sort` input to sort the list of posts
 
@@ -43,10 +48,14 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### `0.1.0` _(03-09-2023)_
 - Static Site Generation / SSG 
 - Markdown files for performance and content.
-
 ### `0.1.1` _(10-09-2023)_
 - Remote MDX Content Files
 - `revalidatePath` endpoint `/api/revalidate?secret={{ GITHUB_TOKEN }}&path={{'/'}}` allows for revalidation of blog posts on demand.
 ### `0.1.2` _(12-09-2023)_
 - Add a Dark mode switcher using talwindcss darkMode class and next-themes package.
 - Replace react-icons with heroicons.
+### `0.1.3` _(12-09-2023)_
+- Add a Social Links component.
+- Replace heroicons with tabler/icons.
+- Extend theme colors.
+- Add sections to the navigation bar.
