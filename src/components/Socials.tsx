@@ -3,6 +3,7 @@ import LinkButton from './LinkButton'
 import { GithubIcon, LinkedinIcon, TwitterIcon, SendIcon } from 'lucide-react'
 import { SocialMedia } from '@/types'
 import { ReactNode } from 'react'
+import { cn } from '@/lib/utils'
 
 interface SocialProps {
     centered?: boolean
@@ -29,7 +30,9 @@ function Socials ({ centered }: SocialProps) {
         <LinkButton
           key={social.name}
           href={social.href}
-          className={`link p-2 hover:rotate-6 sm:p-1 ${idx === 0 ? 'xs:pl-0' : ''}`}
+          className={cn('link p-2 hover:rotate-6 sm:p-1', {
+            'pl-0': idx === 0
+          })}
           title={social.linkTitle}
           ariaLabel='social'
           disabled={false}

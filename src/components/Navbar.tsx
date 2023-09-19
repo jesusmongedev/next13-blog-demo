@@ -59,10 +59,12 @@ function Navbar () {
           </button>
           <MobileNav
             className={cn(
-              'md:hidden fixed inset-0 top-[73px] z-50 grid h-[calc(100vh-4rem)] grid-flow-row auto-rows-max overflow-auto p-6 pb-32 shadow-md bg-background transition-all animate-slide-in-from-bottom-80',
+              'md:hidden fixed h-[calc(100vh-73px)] z-50 grid grid-flow-row auto-rows-max overflow-auto p-6 shadow-md pb-32 transition-all duration-300',
               {
-                'top-[100vh]': !showMobileMenu
-              }
+                'inset-0 bg-background': showMobileMenu,
+                'left-[-100%]': !showMobileMenu
+              },
+              'top-[73px]'
             )}
             items={mainNavItems}
             toggleMobileMenu={toggleMobileMenu}

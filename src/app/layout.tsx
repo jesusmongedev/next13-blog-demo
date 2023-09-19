@@ -1,10 +1,7 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Providers from './providers'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Jesus' Blog",
@@ -18,7 +15,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang='en' className='dark' style={{ colorScheme: 'dark' }}>
-      <body className={`${inter.className} scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90`}>
+      <body className='scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90'>
         <Providers>
           <Navbar />
           <main className='px-8 md:px-6 prose prose-base md:prose-xl prose-slate dark:prose-invert mx-auto'>

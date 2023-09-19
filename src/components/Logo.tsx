@@ -1,6 +1,6 @@
 import { SITE } from '@/config/site'
 import { cn } from '@/lib/utils'
-import { CodeIcon } from 'lucide-react'
+import { Code2 } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -16,8 +16,8 @@ function Logo ({ hideTitle }: LogoProps) {
       href='/'
       className='text-foreground/90 hover:text-foreground/80 nav-link flex items-center space-x-2 '
     >
-      <CodeIcon className='text-primary' />
-      <span className={cn(hideTitle ? 'hidden sm:inline-block' : '')}>
+      <Code2 className='text-primary' />
+      <span className={cn('font-mono', hideTitle ? 'hidden sm:inline-block' : '')}>
         {firstPart}<span className='text-primary font-bold'>{secondPart}</span>
       </span>
     </Link>
