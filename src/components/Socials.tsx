@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 
 interface SocialProps {
     centered?: boolean
+    className?: string
 }
 
 type SocialIconsProps = {
@@ -15,15 +16,18 @@ type SocialIconsProps = {
 }
 
 const socialIcons: SocialIconsProps = {
-  Github: <GithubIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  LinkedIn: <LinkedinIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  Twitter: <TwitterIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  Mail: <SendIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />
+  Github: <GithubIcon className='w-5 h-5 sm:w-6 sm:h-w-6' />,
+  LinkedIn: <LinkedinIcon className='w-5 h-5 sm:w-6 sm:h-w-6' />,
+  Twitter: <TwitterIcon className='w-5 h-5 sm:w-6 sm:h-w-6' />,
+  Mail: <SendIcon className='w-5 h-5 sm:w-6 sm:h-w-6' />
 }
 
-function Socials ({ centered }: SocialProps) {
+function Socials ({ centered, className }: SocialProps) {
   return (
-    <div className={`flex ${centered ? ' flex-wrap sm:justify-center gap-1' : ''}`}>
+    <div className={cn('flex', {
+      'flex-wrap justify-center gap-1': centered
+    }, className)}
+    >
       {
     SOCIALS.filter(social => social.active).map((social, idx) => {
       return (

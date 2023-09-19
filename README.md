@@ -39,9 +39,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [X] Add a `404` page
 - [X] Add `shadcn/ui` library
 - [X] Responsive Navigation Bar
-- [] Add `about` section 
-- [] Add a `projects` section
-- [] Add a `blog` section
+- [X] Responsive Footer
+- [] Add `hero` section 
+- [] Add `about` screen 
+- [] Add a `projects` screen
+- [] Add a `blog` screen
 - [ ] Add a `search` input to filter the list of posts
 - [ ] Add a `sort` input to sort the list of posts
 
@@ -65,3 +67,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Add Responsive Navbar.
 - Logo component.
 - Update Mode Theme Switcher.
+### `0.1.5` _(19-09-2023)_
+- Add Responsive Footer.
+- Update layout.

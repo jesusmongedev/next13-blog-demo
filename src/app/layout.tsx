@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import Providers from './providers'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: "Jesus' Blog",
@@ -15,12 +16,13 @@ export default function RootLayout ({
 }) {
   return (
     <html lang='en' className='dark' style={{ colorScheme: 'dark' }}>
-      <body className='scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90'>
+      <body className='scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90 flex flex-col'>
         <Providers>
           <Navbar />
-          <main className='px-8 md:px-6 prose prose-base md:prose-xl prose-slate dark:prose-invert mx-auto'>
+          <main className='px-8 md:px-12 lg:px-0 prose prose-base md:prose-2xl prose-slate dark:prose-invert mx-auto w-full min-h-[78vh] md:min-h-[82vh]'>
             {children}
           </main>
+          <Footer />
         </Providers>
       </body>
     </html>

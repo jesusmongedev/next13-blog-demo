@@ -78,7 +78,7 @@
 
 @layer components{
   .link {
-    @apply hover:text-primary dark:text-white/90 dark:hover:text-primary transition-all duration-75;
+    @apply text-muted-foreground hover:text-primary dark:hover:text-primary transition-all duration-75;
   }
   .nav-link {
     @apply no-underline;

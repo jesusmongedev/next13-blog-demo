@@ -24,7 +24,7 @@ function Navbar () {
     }
     )}
     >
-      <div className='px-4 md:px-6 prose prose-xl mx-auto flex items-center'>
+      <div className='px-4 md:px-8 lg:px-0 prose prose-base md:prose-2xl mx-auto flex items-center'>
         <div className='flex items-center sm:space-x-8 flex-1'>
           <Logo />
           {mainNavItems?.length

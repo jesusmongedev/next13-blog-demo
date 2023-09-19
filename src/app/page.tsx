@@ -9,7 +9,7 @@ const socialCount = SOCIALS.filter((social) => social.active).length
 
 export default function Home () {
   return (
-    <div>
+    <div className='md:text-lg'>
       <MyProfilePic />
       <p className='my-12 text-3xl text-center'>
         Hi and Welcome 👋, I'm <span className='font-bold'>Jesus</span>
