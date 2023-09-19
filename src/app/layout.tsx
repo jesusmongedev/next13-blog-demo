@@ -18,10 +18,10 @@ export default function RootLayout ({
 }) {
   return (
     <html lang='en' className='dark' style={{ colorScheme: 'dark' }}>
-      <body className={`${inter.className} dark:bg-slate-800 scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90`}>
+      <body className={`${inter.className} scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-white/90`}>
         <Providers>
           <Navbar />
-          <main className='px-4 md:px-6 prose prose-xl prose-slate dark:prose-invert mx-auto'>
+          <main className='px-8 md:px-6 prose prose-base md:prose-xl prose-slate dark:prose-invert mx-auto'>
             {children}
           </main>
         </Providers>

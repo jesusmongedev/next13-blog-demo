@@ -1,14 +1,5 @@
-import { Site, SocialObjects } from './types'
-
-export const SITE: Site = {
-  website: 'https://next13-blog-demo.vercel.app/',
-  author: 'Jesús Monge',
-  desc: 'A Next.js blog starter with MDX and Tailwind CSS',
-  title: 'JMongeDev',
-  ogImage: 'nextBlog.png',
-  lightAndDarkMode: true,
-  postPerPage: 3
-}
+import { SocialObjects } from '@/types'
+import { SITE } from './site'
 
 export const SOCIALS: SocialObjects = [
   {

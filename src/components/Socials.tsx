@@ -1,6 +1,6 @@
-import { SOCIALS } from '@/config'
+import { SOCIALS } from '@/config/icons'
 import LinkButton from './LinkButton'
-import { IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconSend } from '@tabler/icons-react'
+import { GithubIcon, LinkedinIcon, TwitterIcon, SendIcon } from 'lucide-react'
 import { SocialMedia } from '@/types'
 import { ReactNode } from 'react'
 
@@ -14,10 +14,10 @@ type SocialIconsProps = {
 }
 
 const socialIcons: SocialIconsProps = {
-  Github: <IconBrandGithub className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  LinkedIn: <IconBrandLinkedin className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  Twitter: <IconBrandTwitter className='w-6 h-6 sm:w-7 sm:h-w-7' />,
-  Mail: <IconSend className='w-6 h-6 sm:w-7 sm:h-w-7' />
+  Github: <GithubIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
+  LinkedIn: <LinkedinIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
+  Twitter: <TwitterIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />,
+  Mail: <SendIcon className='w-6 h-6 sm:w-7 sm:h-w-7' />
 }
 
 function Socials ({ centered }: SocialProps) {

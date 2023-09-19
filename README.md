@@ -37,7 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - [X] Add a Dark mode switcher
 - [X] Add a `404` page
-- [] Add NextUI library
+- [X] Add `shadcn/ui` library
+- [X] Responsive Navigation Bar
 - [] Add `about` section 
 - [] Add a `projects` section
 - [] Add a `blog` section
@@ -59,3 +60,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Replace heroicons with tabler/icons.
 - Extend theme colors.
 - Add sections to the navigation bar.
+### `0.1.4` _(18-09-2023)_
+- Add a shadcn/ui component library.
+- Add Responsive Navbar.
+- Logo component.
+- Update Mode Theme Switcher.

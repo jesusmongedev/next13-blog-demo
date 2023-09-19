@@ -30,3 +30,11 @@ export type SocialObjects = {
   active: boolean;
   linkTitle: string;
 }[];
+
+export type NavItem = {
+  title: string
+  href: string
+  disabled?: boolean
+}
+
+export type MainNavItems = NavItem[]

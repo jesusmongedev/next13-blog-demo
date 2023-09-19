@@ -1,7 +1,7 @@
 import MyProfilePic from '@/components/MyProfilePic'
 import Posts from '@/components/Posts'
 import Socials from '@/components/Socials'
-import { SOCIALS } from '@/config'
+import { SOCIALS } from '@/config/icons'
 
 export const revalidate = process.env.REVALIDATE
 
