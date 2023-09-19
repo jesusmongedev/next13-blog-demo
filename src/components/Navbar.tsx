@@ -26,7 +26,7 @@ function Navbar () {
     >
       <div className='px-4 md:px-6 prose prose-xl mx-auto flex items-center'>
         <div className='flex items-center sm:space-x-8 flex-1'>
-          <Logo hideTitle />
+          <Logo />
           {mainNavItems?.length
             ? (
               <nav className='hidden gap-6 md:flex'>
@@ -63,7 +63,9 @@ function Navbar () {
               {
                 'top-[100vh]': !showMobileMenu
               }
-            )} items={mainNavItems}
+            )}
+            items={mainNavItems}
+            toggleMobileMenu={toggleMobileMenu}
           />
         </div>
       </div>

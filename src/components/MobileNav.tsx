@@ -6,10 +6,11 @@ import { cn } from '@/lib/utils'
 interface MobileNavProps {
   items: MainNavItems
   className?: string
+  toggleMobileMenu: () => void
   children?: React.ReactNode
 }
 
-export function MobileNav ({ items, className, children }: MobileNavProps) {
+export function MobileNav ({ items, className, toggleMobileMenu, children }: MobileNavProps) {
   return (
     <div
       className={cn(className
@@ -24,6 +25,7 @@ export function MobileNav ({ items, className, children }: MobileNavProps) {
               'flex w-full items-center rounded-md p-2 text-sm font-medium no-underline text-foreground/60 hover:text-foreground/80',
               item.disabled && 'cursor-not-allowed opacity-60'
             )}
+            onClick={item.disabled ? () => {} : toggleMobileMenu}
           >
             {item.title}
           </Link>
