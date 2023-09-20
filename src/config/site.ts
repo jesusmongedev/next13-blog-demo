@@ -7,5 +7,6 @@ export const SITE: Site = {
   title: 'JMongeDev',
   ogImage: 'nextBlog.png',
   lightAndDarkMode: true,
-  postPerPage: 3
+  postPerPage: 3,
+  headerHeight: 73
 }
