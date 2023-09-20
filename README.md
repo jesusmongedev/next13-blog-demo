@@ -40,12 +40,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - [X] Add `shadcn/ui` library
 - [X] Responsive Navigation Bar
 - [X] Responsive Footer
-- [] Add `hero` section 
+- [X] Add `hero` section 
+- [] Add `sekills` screen
+- [] Add `projects` screen
 - [] Add `about` screen 
-- [] Add a `projects` screen
-- [] Add a `blog` screen
-- [ ] Add a `search` input to filter the list of posts
-- [ ] Add a `sort` input to sort the list of posts
+- [] Add `blog` screen
+- [ ] Add `search` input to filter the list of posts
+- [ ] Add `sort` input to sort the list of posts
 
 ## Updates
 ### `0.1.0` _(03-09-2023)_
@@ -70,3 +71,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### `0.1.5` _(19-09-2023)_
 - Add Responsive Footer.
 - Update layout.
+### `0.1.6` _(19-09-2023)_
+- Add Responsive Hero section.
