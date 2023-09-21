@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { LucideMenu, XIcon } from 'lucide-react'
 import { MobileNav } from './MobileNav'
 import Logo from './Logo'
+import { Button } from './ui/button'
 
 function Navbar () {
   const segment = useSelectedLayoutSegment()
@@ -51,6 +52,13 @@ function Navbar () {
         </div>
         <div className={cn('flex items-center gap-4')}>
           <ModeToggle />
+          <a
+            href='https://www.linkedin.com/in/jesusandresmonge/?locale=en_US' target='_blank'
+            rel='noopener noreferrer nofollow'
+            className='no-underline hidden md:flex'
+          >
+            <Button variant='modern'>Hire me</Button>
+          </a>
           <button
             className='flex tems-center space-x-2 md:hidden'
             onClick={toggleMobileMenu}

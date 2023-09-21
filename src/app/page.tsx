@@ -5,9 +5,9 @@ export const revalidate = process.env.REVALIDATE
 
 export default function Home () {
   return (
-    <div className='md:text-lg'>
+    <>
       <Hero />
       <Posts />
-    </div>
+    </>
   )
 }

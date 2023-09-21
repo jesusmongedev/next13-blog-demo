@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { MainNavItems } from '@/types'
 import { cn } from '@/lib/utils'
+import { Button } from './ui/button'
 
 interface MobileNavProps {
   items: MainNavItems
@@ -30,6 +31,15 @@ export function MobileNav ({ items, className, toggleMobileMenu, children }: Mob
             {item.title}
           </Link>
         ))}
+        <div className='mt-2'>
+          <a
+            href='https://www.linkedin.com/in/jesusandresmonge/?locale=en_US' target='_blank'
+            rel='noopener noreferrer nofollow'
+            className='no-underline'
+          >
+            <Button>Hire me</Button>
+          </a>
+        </div>
       </nav>
       {children}
     </div>

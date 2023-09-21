@@ -17,8 +17,8 @@ function Logo ({ hideTitle }: LogoProps) {
       className='text-foreground/90 hover:text-foreground/80 nav-link flex items-center space-x-2 '
     >
       <Code2 className='text-primary' />
-      <span className={cn('font-mono', hideTitle ? 'hidden sm:inline-block' : '')}>
-        {firstPart}<span className='text-primary font-bold'>{secondPart}</span>
+      <span className={cn('font-mono md:text-lg', hideTitle ? 'hidden sm:inline-block' : '')}>
+        {firstPart}<span className='text-primary font-black'>{secondPart}</span>
       </span>
     </Link>
   )
