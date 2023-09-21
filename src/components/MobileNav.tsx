@@ -37,7 +37,7 @@ export function MobileNav ({ items, className, toggleMobileMenu, children }: Mob
             rel='noopener noreferrer nofollow'
             className='no-underline'
           >
-            <Button>Hire me</Button>
+            <Button variant='modern'>Hire me</Button>
           </a>
         </div>
       </nav>

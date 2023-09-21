@@ -3,7 +3,7 @@ import Socials from './Socials'
 import { Button } from './ui/button'
 import { cn } from '../lib/utils'
 import { SOCIALS } from '@/config/icons'
-import { BadgeCheck, Laptop, Rocket } from 'lucide-react'
+import { MonitorSmartphone, BlocksIcon } from 'lucide-react'
 
 function Hero () {
   const socialCount = SOCIALS.filter((social) => social.active).length
@@ -18,19 +18,17 @@ function Hero () {
           </h1>
           <div className='mb-1 md:mb-2'>
             <div className='flex items-center space-x-2'>
-              <Laptop className='text-primary' size={20} />
-              <span className='text-popover-foreground font-medium text-xl m-0'>Fullstack Developer </span>
+              <MonitorSmartphone className='text-primary' size={20} />
+              <span className='text-popover-foreground font-medium md:text-xl m-0'>Fullstack Developer </span>
             </div>
             <div className='flex items-center space-x-2'>
-              <Rocket className='text-primary' size={20} />
-              <span className='text-popover-foreground font-medium text-xl m-0'>Life long learner</span>
-            </div>
-            <div className='flex items-center space-x-2'>
-              <BadgeCheck className='text-primary' size={20} />
-              <span className='text-popover-foreground font-medium text-xl m-0'>Problem Solver</span>
+              <BlocksIcon className='text-primary' size={20} />
+              <span className='text-popover-foreground font-medium md:text-xl m-0'>
+                Self Taught
+              </span>
             </div>
           </div>
-          <span className='text-muted-foreground font-normal text-lg'>Passionate for crafting solutions that drive tangible results</span>
+          <span className='text-muted-foreground font-normal md:text-lg'>Passionate for crafting solutions that drive tangible results</span>
         </div>
         <div className='space-x-4'>
           <Button>Resume</Button>
