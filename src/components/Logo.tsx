@@ -1,25 +1,27 @@
 import { SITE } from '@/config/site'
 import { cn } from '@/lib/utils'
-import { Code2 } from 'lucide-react'
+import { useTheme } from 'next-themes'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-type LogoProps = {
-  hideTitle?: boolean
-}
-
-function Logo ({ hideTitle }: LogoProps) {
-  const firstPart = SITE.title.slice(0, 6)
-  const secondPart = SITE.title.slice(6, 9)
+function Logo () {
+  const { theme } = useTheme()
   return (
     <Link
       href='/'
-      className='text-foreground/90 hover:text-foreground/80 nav-link flex items-center space-x-2 '
+      className='text-foreground/90 hover:text-foreground/80 nav-link flex items-center space-x-2 prose-img:m-0'
     >
-      <Code2 className='text-primary' />
-      <span className={cn('font-mono md:text-lg', hideTitle ? 'hidden sm:inline-block' : '')}>
-        {firstPart}<span className='text-primary font-black'>{secondPart}</span>
-      </span>
+      <Image
+        className={cn({
+          hidden: theme === 'light'
+        })} src='/jmongedev.svg' alt={SITE.title} width={140} height={30}
+      />
+      <Image
+        className={cn({
+          hidden: theme === 'dark'
+        })} src='/jmongedev.dark.svg' alt={SITE.title} width={140} height={30}
+      />
     </Link>
   )
 }

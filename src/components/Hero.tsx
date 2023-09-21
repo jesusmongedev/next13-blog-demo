@@ -3,29 +3,25 @@ import Socials from './Socials'
 import { Button } from './ui/button'
 import { cn } from '../lib/utils'
 import { SOCIALS } from '@/config/icons'
-import { MonitorSmartphone, BlocksIcon } from 'lucide-react'
+import { Circle } from 'lucide-react'
 
 function Hero () {
   const socialCount = SOCIALS.filter((social) => social.active).length
 
   return (
-    <div className={cn('py-12 md:my-44  flex flex-col justify-between md:flex-row md:items-center md:justify-center md:space-x-16 md:p-0')}>
+    <div className={cn('py-6 md:py-32 flex flex-col justify-between md:flex-row md:items-center md:justify-center md:space-x-16')}>
       {/* Introduction + CTA  */}
       <div className='max-w-sm space-y-4 md:space-y-6'>
         <div className='flex flex-col'>
-          <h1 className='text-3xl md:text-4xl'>Hey! 👋<br />
-            I'm <span className='font-bold text-primary'>Jesus Monge</span>
-          </h1>
+          <h2 className='text-2xl md:text-4xl'>
+            <span>Hey! <span className='animate-wave-animation inline-block origin-top-left-3/4-3/4'>👋</span></span>
+            <br />
+            I’m <span className='text-primary'>Jesús Monge</span>
+          </h2>
           <div className='mb-1 md:mb-2'>
             <div className='flex items-center space-x-2'>
-              <MonitorSmartphone className='text-primary' size={20} />
-              <span className='text-popover-foreground font-medium md:text-xl m-0'>Fullstack Developer </span>
-            </div>
-            <div className='flex items-center space-x-2'>
-              <BlocksIcon className='text-primary' size={20} />
-              <span className='text-popover-foreground font-medium md:text-xl m-0'>
-                Self Taught
-              </span>
+              <Circle className='text-primary fill-primary' size={8} />
+              <span className='text-popover-foreground md:text-xl m-0'>Fullstack Developer </span>
             </div>
           </div>
           <span className='text-muted-foreground font-normal md:text-lg'>Passionate for crafting solutions that drive tangible results</span>
